@@ -1,0 +1,425 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="description" content="This is description">
+        <meta name="keywords" content="html,html tutorials, web development">
+        <meta name="robots" content="INDEX,FOLLOW">
+        <title> Log in</title>
+    </head>
+<style>
+    body{
+       padding: 0px;
+       margin: 0px;
+
+
+    }
+   
+    .box{
+        border: 2px solid rgb(51, 192, 16);
+        border-radius: 12px;
+        width: 400px;
+        height: 460px;
+        text-align: center;
+        margin-left: 900px;
+        margin-top: -534px;
+        font-size: 20px;
+        background-color: rgb(104, 119, 20);
+    }
+
+
+
+
+    .navbar{
+    display: inline-block;
+    text-decoration: none;
+}
+.navbar li{
+    display: inline-block;
+    font-size: 20px;
+
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 25px;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    color: rgb(12, 194, 201);
+}
+
+
+.mid{
+    /* border: 2px solid rgb(219, 19, 19); */
+    display: block;
+     margin-left: 20%; 
+     padding-top: 10px;
+    /* width: 70px; */
+    margin-top: 12px;
+    
+
+
+}
+
+
+.header{
+    position: fixed;
+    position: sticky;
+    position: absolute;
+   
+    /* background-color: rgb(21, 7, 82); */
+    height: 95px;
+    width: 1500px;
+
+  
+}
+
+.bg img{
+          margin-top: 0px;
+      width: 1500px;
+      height: 756px;
+      
+        }
+
+.box1{
+  /* border: 2px solid red; */
+  width: 790px;
+  margin-left: 120px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.box2{
+  /* border: 2px solid red; */
+  /* position: relative; */
+  
+
+  width: 252px;
+  margin-top: -48px;
+  margin-left: 44px;
+
+}
+.box3{
+  
+
+}
+.box3 img{
+  border-radius: 12px;
+  width: 26px;
+}
+.img1{
+  width: 35px;
+}
+.img2{
+ 
+ display: inline-block;
+  width: 7px;
+  height: 16px;
+  margin-top: -550px;
+  margin-left: 967px;
+
+}
+.img2 img{
+  border-radius: 23px;
+  width: 544px;
+  height: 556px;
+  margin-left: 0px;
+}
+.footer{
+  /* border: 2px solid red ; */
+  /* background-color: wheat; */
+  height: 389px;
+}
+
+.footer1{
+  /* border: 2px solid red ; */
+  margin-left: 123px;
+  margin-top: 28px;
+  width: 334px;
+  font-size: 19px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.footer1 a{
+  text-decoration: none;
+}
+
+.footer2{
+  /* border: 2px solid green ; */
+  display: inline-block;
+  margin-left: 600px;
+  margin-top: -255px;
+  font-size: 19px;
+
+}
+
+.footer3{
+/* border: 2px solid rgb(28, 8, 179) ; */
+width: 256px;
+margin-left: 970px;
+margin-top: -275px;
+font-size: 19px;
+}
+.footer5{
+  background-color: black;
+  height: 100px;
+  padding-top: 10px;
+  margin: 0px;
+}
+.footer4{
+  margin-left: 653px;
+  color: aliceblue;
+  margin-top: 0px;
+  
+ }
+
+</style>
+
+<body >
+    <header class="header">
+    <div class="mid">
+            
+        <ul class="navbar">
+            <li><a href="#" class="active"> Home</a></li>
+            <li><a href="#">Sample resume</a></li>
+            <!-- <section class=" Ram">
+                <option> Ram</option>
+                <option> DGG</option>
+            </section> -->
+            
+             <li><a href="#">Success story  </a></li>
+             <!-- <select >
+                <option value ="ind"> Indica </option>
+                <option value="Swf" selected>Swift</option>
+            </select> -->
+
+            <li><a href="#">Coding </a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <!-- <li><a href="#" class="back">Free Consultation</a></li> -->
+        </ul>
+    </div>
+</header>
+
+<div class="bg img">
+    <img src="https://wallpaper.dog/large/20382890.jpg">
+</div>
+
+
+
+    <div class="box">
+    
+<div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div class="container mx-auto">
+      <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+        <div class="text-center">
+          <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+            Log in 
+          </h1>
+          <p class="text-gray-400 dark:text-gray-400">
+            Fill up the form below to send us a message.
+          </p>
+        </div>
+        <div class="m-7">
+          <form action="contactus.php" method="POST" id="form">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+            <div class="mb-6">
+              <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Name:</label>
+              <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" /><br><br>
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email:</label>
+              <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" /><br><br>
+            </div>
+            <!-- <div class="mb-6">
+              <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Number:</label>
+              <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+            </div> -->
+            <div class="mb-6"><br>
+              <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message:</label><br><br>
+              <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea><br><br>
+            </div>
+            <div class="mb-6"><br>
+              <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">subject:</label><br><br>
+              <textarea rows="5" name="message" id="message" placeholder="subject" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea><br><br>
+            </div>
+            <div class="mb-6"><br>
+              <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">query:</label><br><br>
+              <textarea rows="5" name="message" id="message" placeholder="query" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea><br><br>
+            </div>
+            <div class="mb-6">
+              <!--<button type="submit" class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+                Send Message
+              </button>-->
+              <input type="submit" name="submit" value="SUBMIT" class="submit-button">
+            </div>
+            <p class="text-base text-center text-gray-400" id="result"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br><br><br><br>
+
+
+<div class="box1">
+<h1>PURPOSE OF THIS WEBSITE.</h1>
+<h3>A place where you can find everything related to Chandigarh University CSE Department.</h3>
+
+<img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuElBpM1Z4kqdcegU3VYCZrImLL3Ye2AOCEw&usqp=CAU">
+<div class="box2">
+<h3>Study Materials.</h3>
+</div>
+<img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuElBpM1Z4kqdcegU3VYCZrImLL3Ye2AOCEw&usqp=CAU">
+<div class="box2">
+<h3>How to make resume</h3>
+</div>
+<img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuElBpM1Z4kqdcegU3VYCZrImLL3Ye2AOCEw&usqp=CAU">
+<div class="box2">
+<h3> Technical Blogs</h3>
+</div>
+<img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuElBpM1Z4kqdcegU3VYCZrImLL3Ye2AOCEw&usqp=CAU">
+<div class="box2">
+<h3>Technical Sessions</h3>
+</div>
+<img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuElBpM1Z4kqdcegU3VYCZrImLL3Ye2AOCEw&usqp=CAU">
+<div class="box2">
+<h3>Talents of CUians</h3>
+</div>
+
+<img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuElBpM1Z4kqdcegU3VYCZrImLL3Ye2AOCEw&usqp=CAU">
+<div class="box2">
+<h3>Guidance from Seniors</h3>
+</div>
+<img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuElBpM1Z4kqdcegU3VYCZrImLL3Ye2AOCEw&usqp=CAU">
+<div class="box2">
+<h3> Placements Talks with seniors</h3>
+</div>
+<img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuElBpM1Z4kqdcegU3VYCZrImLL3Ye2AOCEw&usqp=CAU">
+<div class="box2">
+<h3>Finding Solutions Together</h3>
+</div>
+<img class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuElBpM1Z4kqdcegU3VYCZrImLL3Ye2AOCEw&usqp=CAU">
+<div class="box2">
+<h3>Exposure</h3>
+</div>
+</div>
+<div class="img2">
+<img src="https://custudentszone.azureedge.net/assets/img/png3.png">
+<!-- <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/stockvault-person-studying-and-learning---knowledge-concept178241_0-647x363.jpeg?0LocAW2E2gIBzZp0oZSWzxmQTvAPhN_v"> -->
+
+</div><br><br><br>
+
+
+<div class="footer">
+  <div class="footer1">
+  <h3>TECHBUZZ</h3>
+<p>DEVELOPED BY -</p>
+<p>TEAM XTREAM</p>
+<p>IIND YEAR B.E/B.TECH (CSE)</p> 
+
+<!-- <a href="#">WWW.XTREAM</a> -->
+
+<p><b>Email:  </b>teamxtreambuzz@gmail.com </p>
+<a  href="#">Report Bug</a>
+  </div>
+
+<!-- <div class="footer2"> -->
+
+
+
+  <div class="footer2">
+  <h3>Useful Links</h3>
+  <div class="box3">
+  <img src="https://image.shutterstock.com/image-vector/green-arrow-vector-260nw-54580420.jpg">
+  </div>
+  <div class="box2">
+  <p>Home</p>
+</div>
+<div class="box3">
+  <img src="https://image.shutterstock.com/image-vector/green-arrow-vector-260nw-54580420.jpg">
+  </div>
+  <div class="box2">
+<p>About us</p>
+</div>
+<div class="box3">
+  <img src="https://image.shutterstock.com/image-vector/green-arrow-vector-260nw-54580420.jpg">
+  </div>
+  <div class="box2">
+<p>Services</p>
+</div>
+<div class="box3">
+  <img src="https://image.shutterstock.com/image-vector/green-arrow-vector-260nw-54580420.jpg">
+  </div>
+  <div class="box2">
+<p>Terms of service</p>
+</div>
+<div class="box3">
+  <img src="https://image.shutterstock.com/image-vector/green-arrow-vector-260nw-54580420.jpg">
+  </div>
+  <div class="box2">
+<p>Privacy policy</p>
+</div>
+</div>
+
+
+<div class="footer3">
+
+ 
+   
+  <h3>Our Services</h3>
+  
+  <div class="box3">
+    <img src="https://image.shutterstock.com/image-vector/green-arrow-vector-260nw-54580420.jpg">
+    </div>
+    <div class="box2">
+<p>Instagram</p>
+</div>
+<div class="box3">
+  <img src="https://image.shutterstock.com/image-vector/green-arrow-vector-260nw-54580420.jpg">
+  </div>
+  <div class="box2">
+<p>Facebook</p>
+</div>
+<div class="box3">
+  <img src="https://image.shutterstock.com/image-vector/green-arrow-vector-260nw-54580420.jpg">
+  </div>
+  <div class="box2">
+<p>Twitter</p>
+</div>
+<div class="box3">
+  <img src="https://image.shutterstock.com/image-vector/green-arrow-vector-260nw-54580420.jpg">
+  </div>
+  <div class="box2">
+<p>linkedin</p>
+</div>
+<div class="box3">
+  <img src="https://image.shutterstock.com/image-vector/green-arrow-vector-260nw-54580420.jpg">
+  </div>
+  <div class="box2">
+<p>GitHub</p>
+</div>
+</div>
+
+<div class="footer4">
+  <!-- <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201810/stockvault-person-studying-and-learning---knowledge-concept178241_0-647x363.jpeg?0LocAW2E2gIBzZp0oZSWzxmQTvAPhN_v"> -->
+
+</div>
+<br><br>
+
+<div class="footer5">
+<div class="footer4">
+<p>© Copyright TECHBUZZ. </p>
+  <p>All Rights Reserved
+  Designed by Xtream Team</p>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
